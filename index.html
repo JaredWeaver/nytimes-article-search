@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    
+    <link rel="stylesheet" href="assets/style.css"/>
+    <title>New York Times Search</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-primary">
+            <h1 class="display-4">New York Times Article Search</h1>
+        </div>
+        <div class="panel panel-default border">
+            <div class="panel-heading border">
+                <h1 class="panel-title">Search Parameters</h1>
+            </div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-12">
+                        <label for="searchTerm">Search Term</label>
+                        <input type="email" class="form-control" id="searchTerm">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="recordsCount">Number of Records to Retrieve:</label>
+                      <input type="number" class="form-control" id="recordsCount" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="startYear">Start Year (optional)</label>
+                      <input type="text" class="form-control" id="startYear" placeholder="Optional">
+                    </div>
+                    <div class="form-group">
+                        <label for="endYear">End Year (optional)</label>
+                        <input type="text" class="form-control" id="endYear" placeholder="Optional">
+                      </div>
+                   
+                      
+                    <button type="submit" class="btn btn-primary" id="searchBtn">Search</button>
+                    <button type="submit" class="btn btn-primary" id="clearBtn">Clear</button>
+
+                </form>           
+            </div>           
+        </div>
+        <br><br>
+        <div class="panel panel-default border">
+            <div class="panel-heading">
+                <h1 class="panel-title">Top Articles</h1>
+            </div>
+            <div class="panel-body">
+                <div id="article-section"></div>
+            </div>
+        </div>
+    </div>
+
+    
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
+
+<!-- <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label> -->
